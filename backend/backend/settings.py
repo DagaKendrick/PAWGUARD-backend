@@ -139,3 +139,5 @@ REST_FRAMEWORK = {
         'rest_framework.authentication.TokenAuthentication',
     ],
 }
+
+# For Commit Message only! (Delete Later)
