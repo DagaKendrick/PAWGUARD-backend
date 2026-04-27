@@ -55,7 +55,7 @@
 <tr>
 <td>Redante Sabio</td>
 <td>Frontend Developer/Documentation Specialist</td>
-<td>Designed the user interface and assisted in building the dashboard and system pages. Prepared system documentation, reports, and presentation materials.</td>
+<td>Designed the user interface and assisted in building the dashboard and system pages. Prepared system documentation, reports, files, and presentation material.</td>
 </tr>
 
 <tr>
