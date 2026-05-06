@@ -25,7 +25,11 @@ SECRET_KEY = "django-insecure-rlv2l11&%_#bw-nhev)-)(v0staayp04q7v*wsovwdvhd-ts)=
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    '127.0.0.1',
+    'localhost',
+    '192.168.100.6',
+]
 
 
 # Application definition
@@ -41,13 +45,13 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework.authtoken',  
     'corsheaders',
-    ,
+    
 ]
 
 MIDDLEWARE = [
+    "corsheaders.middleware.CorsMiddleware",
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
-    "corsheaders.middleware.CorsMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
     "django.contrib.auth.middleware.AuthenticationMiddleware",
@@ -81,11 +85,13 @@ WSGI_APPLICATION = "backend.wsgi.application"
 
 DATABASES = {
     "default": {
-        "ENGINE": "mysql",
-        "NAME": "pawguarddb",
+        "ENGINE": "django.db.backends.mysql",
+        "NAME": "pawpaw",
         "USER": "root",
-        "HOST": "",
+        "HOST": "127.0.0.1",
         "PASSWORD": "",
+        "PORT": "3306",
+
     }
 }
 
